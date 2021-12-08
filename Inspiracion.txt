@@ -1,0 +1,11 @@
+https://nomadictribe.com/ - El sombreado del inicio, más lo del video.
+http://www.feedmusic.com/ - Como cambian las diferentes secciones mas el scrolleado
+http://lestani.com.ar/es/index.html - letra que se va escribiendo
+https://ylaufer.github.io/rey-de-urbino/pages/tienda.html - el header que cambia de color apenas baja, se vuelve fixed y todo negro de fondo
+https://ivanstabile.github.io/proyectofinal/index.html - entrada del texto para cada una de las imagenes, tambien el diseño es muy bonito con los bordes redondos
+
+https://www.google.com/search?q=buttons+hovers+webpage&sxsrf=AOaemvIwFVfA8twP8J6xU56ro47M_UXZRw%3A1638312745386&ei=KaumYaDzFprc1sQP562JgA8&ved=0ahUKEwjgq-DJlsH0AhUarpUCHedWAvAQ4dUDCA4&uact=5&oq=buttons+hovers+webpage&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAE6BAgjECc6BAgAEEM6CwguEIAEEMcBENEDOhEILhCABBCxAxCDARDHARCjAjoLCC4QgAQQsQMQgwE6CwgAEIAEELEDEIMBOgQILhBDOggILhCABBCxAzoHCAAQsQMQQzoGCAAQChBDOgcILhCxAxBDOgUIABCABDoFCC4QgAQ6BQgAEMsBOgsILhDHARCvARDLAToFCC4QywE6BwgAEAoQywE6BggAEBYQHjoICAAQFhAKEB46BQghEKABOggIABAIEA0QHkoFCDwSATJKBAhBGABKBAhGGABQAFj5HGDMHWgCcAJ4AIABtwGIAY0YkgEEMC4yMZgBAKABAcABAQ&sclient=gws-wiz - PARA buscar botones
+
+https://freefrontend.com/css-button-hover-effects/ - botones
+https://codepen.io/davidicus/pen/emgQKJ/ - un modelo.
+https://www.sliderrevolution.com/resources/css-button-hover-effects/ - modelo 2 de botones

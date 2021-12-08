@@ -1,0 +1,76 @@
+<!---------------------------servicios start---------------------------->
+        <section class="servicios">
+            <h1 class="h1servicios">SERVICIO</h1>
+            <div class="contenedorservicios">
+                <div class="imagenservicios">
+                    <img src="assets/cliente2.jpg" alt="" class="imagen1">
+                </div>
+                <div class="textoservicios">
+                    <h3 class="h3servicios">¿En qué consiste el servicio?</h3>
+                    <p class="parrafotextoservicios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis molestiae quaerat ducimus nihil nostrum saepe! Laudantium soluta perspiciatis repellat suscipit voluptatibus tempore labore unde. Odio libero reprehenderit ipsum nisi expedita.</p>
+                    <a href="#" class="PENDIENTE">Conoce más</a>
+                </div>
+            </div>
+        </section>
+    <!---------------------------servicios end---------------------------->
+
+
+
+
+
+/*----------------servicios start------------------*/
+.servicios{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+}
+    .h1servicios{
+        text-align: center;
+        color: #494ceb;
+        width: 100%;
+        height: 10%;
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+    .contenedorservicios{
+        background-color:#13131a;
+        display: flex;
+        flex-flow: row wrap;
+        height: 80%;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+        .imagenservicios{
+            width: 40%;
+            height: 100%;
+        }
+            .imagen1{
+                height:100%;
+                width: 100%;
+            }
+        .textoservicios{
+            background-color: #13131a;
+            width: 60%;
+            height: 90%;
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            
+            
+        }
+            .h3servicios{
+                font-weight: bold;
+                text-align: left;
+                font-size: 30px;
+            }
+            .parrafotextoservicios{
+                line-height: 1.8;
+                color: #ccc;
+            }
+/*----------------servicios ends------------------*/ 
+
+
