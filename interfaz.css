@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
 
 
 
@@ -9,17 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --main-color:#494ceb;
-    --border: .1rem solid white;
-}
-
 .grid{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 75vh 75vh 30vh;
+    grid-template-rows: 100vh 75vh 40vh 75vh 30vh;
     grid-template-areas:    "inicio"
                             "serviciovex" 
+                            "serviciovex2"
                             "valoraciones" 
                             "footer";
 }
@@ -91,44 +87,36 @@
         opacity: 0.5;
         z-index:5;
     }
-/*----------------inicio end------------------*/
+/*----------------INICIO END------------------*/
 
-/*----------------serviciovex start------------------*/
+/*----------------MEDIO START------------------*/
 .serviciovex{
     grid-area: serviciovex;
-    background-color: #1c1c1d; /* #1c1c1c */
+    background-color:#1c1c1d; /* #1c1c1d */
     width: 100%;
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    
 }
-    .h1serviciovex{
+    .titulos{
         text-align: center;
-        color: white;
         width: 100%;
-        font-weight: bold;
-        font-size: 2.5rem;
-        
+        font-weight:bold;
+        font-size: 3rem;
+        background-image: linear-gradient(90deg,#494ceb,#4143c9 50%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     .contenedorserviciovex{
         display:flex;
-        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         flex-flow: row wrap;
-        width: 100%;
+        width: 90%;
         height: 70%;
         text-align: center;
-    }
-    .bot{
-        text-decoration: none;
-        background: #9c6cfe;
-        color: white;
-        border-radius: 1.5rem;
-        text-align: center;
-        font-size: 1.25rem;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
     }
         .servicio1{
             background-color: #1c1c1d;
@@ -137,8 +125,7 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            width: 20%;
-                     
+            width: 30%;          
         }
                                                 .imgservicio{
                                                     clip-path: circle();
@@ -155,7 +142,6 @@
                                                     font-style:italic;
                                                     height: 30%;
                                                     text-overflow: ellipsis;
-
                                                 }
         .servicio2{
             background-color: #1c1c1d;
@@ -164,9 +150,7 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            
-            width: 20%;
-            
+            width: 30%;
         }
         .servicio3{
             background-color: #1c1c1d;
@@ -175,33 +159,54 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            
-            width: 20%;
-            
+            width: 30%;
         }
-        .servicio4{
-            background-color:#1c1c1d;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            
-            width: 40%;
-        }
-        .bots4{
-        
+    .bot{
+        display: block;
         text-decoration: none;
-        background: #9c6cfe;
         color: white;
         border-radius: 1.5rem;
         text-align: center;
         font-size: 1.25rem;
         padding: 1rem;
         margin-bottom: 0.5rem;
+        background-image: linear-gradient(90deg,#494ceb,#4143c9 50%); 
+    }
+        
+
+/*---Comienzo area de servicio vex mensual---*/  
+    .serviciovex2{
+        grid-area: serviciovex2;
+        background-color:#1c1c; /* #1c1c1d */
+        width: 100%;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        display:flex;
+        flex-flow: column wrap;
+        width: auto;
+    }
+        .imgservicio2{
+            clip-path: circle();
+            height:10rem;
         }
-/*----------------serviciovex end------------------*/
-/*----------------valoraciones start------------------*/
+    .contenedorserviciovex2{
+        display:flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-flow: column wrap;
+        width: 70%;
+        height: 70%;
+        text-align: center;
+        background-color: red;
+        justify-content: center;
+    }
+        
+        
+/*---Comienzo area de valoraciones---*/
 .valoraciones{
     grid-area: valoraciones;
     background-color: #1c1c1d;
@@ -210,34 +215,16 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
 }
-    .h1valoraciones{
-        text-align: center;
-        color: white;
-        width: 100%;
-        font-weight: bold;
-        font-size: 2.5rem;
-        
-    }
+    /*h1*/
     .contenedorvaloraciones{
         display:flex;
-        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         flex-flow: row wrap;
         width: 90%;
         height: 70%;
         text-align: center;
-    }
-    .botonvaloraciones{
-        display: block;
-        text-decoration: none;
-        background: #9c6cfe;
-        color: white;
-        border-radius: 1.5rem;
-        text-align: center;
-        font-size: 1.25rem;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
     }
         .valoracion1{
             width: 30%;
@@ -295,9 +282,9 @@
         .separacion{
             width: 5%;
         }
+    /*boton ahref*/
         
-        
-/*----------------valoraciones end------------------*/
+
 /*---------------------------------------------CONTACTO----------------------------------------------------------*/
 /*----------------inicio start------------------*/
 .iniciocontacto{
@@ -351,11 +338,6 @@
         width:25%;
         height: 100%;
     }
-    
-    
-    
-    
-
 .form{
     grid-area: formulario;
     background-color:lightsalmon;
