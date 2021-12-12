@@ -8,11 +8,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:white;
 }
 .grid{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 75vh 40vh 75vh 30vh;
+    grid-template-rows: 100vh 75vh 40vh 75vh auto;
     grid-template-areas:    "inicio"
                             "serviciovex" 
                             "serviciovex2"
@@ -346,61 +347,42 @@
 }
 
 /*----------------inicio end------------------*/
-/*---------------------------------------------FOOTER----------------------------------------------------------*/
-footer{
-    grid-area: footer;
-    padding: 40px 0px;
-    background-color: #333;
+/*---------------------------------------------FOOTER + BS----------------------------------------------------------*/
+.container-fluid{
+    background:linear-gradient(to bottom, #00093c, #2d0b00);
+  }
+              .nav-link{
+                color:white;
+              }
+            .d-flex{
+              
+              flex-flow: column;
+            }
+          .titulocentrado{
+            text-align: center;
+          }
+          
+  .row{
+    justify-content: space-evenly;
+  }
+  .btn-group{
+    display: flex;
+    flex-flow: column wrap;
 }
-footer .social{
-    text-align:center;
-    padding-bottom: 25px;
-    color: white;
-}
-footer .social a{
-    font-size: 24px;
-    color:inherit;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    margin: 0 8px;
-    opacity: 0.65;
-}
-footer .social a:hover {
-    opacity: 1;
-}
-footer ul{
-    margin-top:0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-    color: white;
+  .columna3{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+.redsocialcolumna3{
+    border: 0;
 }
 
-footer ul li a{
-    text-decoration: none;
-    color: inherit;
-    opacity: 0.8;
-}
-footer ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
 
-footer ul li a:hover{
-    opacity: 1;
-}
-footer .copyright{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color:#aaa;
-}
+  
 
+
+  
 /*---------------------------------------------WHATSAPP----------------------------------------------------------*/
 .float{
 	position:fixed;
@@ -446,7 +428,10 @@ footer .copyright{
         object-fit: cover;
         z-index:3;
     }
-    
+    .row{
+        display:flex;
+        flex-flow:column wrap;
+      }
 }
     
    
