@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
 
-
+@font-face {
+    font-family:'Gotham';
+    src: url(fonts/gotham-rounded/GothamRounded-Bold.otf);
+  }
 
 /*---------------------------------------------TODO EL DOCUMENTO-----------------------------------*/
 *{
@@ -13,12 +16,11 @@
 .grid{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 75vh 40vh 75vh auto;
+    grid-template-rows: 100vh 75vh 40vh;
     grid-template-areas:    "inicio"
                             "serviciovex" 
                             "serviciovex2"
-                            "valoraciones" 
-                            "footer";
+                            
 }
 .gridcontacto{
     display:grid;
@@ -87,6 +89,14 @@
         background-color: #1c1c1d;
         opacity: 0.5;
         z-index:5;
+    }
+    .code{
+        z-index:6;
+        position:absolute;
+        top: 50%;
+        bottom: 45%;
+        left: 15%;
+        
     }
 /*----------------INICIO END------------------*/
 
@@ -207,83 +217,100 @@
     }
         
         
-/*---Comienzo area de valoraciones---*/
-.valoraciones{
-    grid-area: valoraciones;
-    background-color: #1c1c1d;
-    width: 100%;
-    display:flex;
+/* Valoraciones */
+/*Valoracion*/
+.contenedorvaloracion{
+
+    /*background: linear-gradient(to bottom, #021B79, #0575E6); */
+    background: #1c1c1d;
+  }
+  
+      
+      .contenedorh1valoracion{
+        text-align: center;
+        
+        background: linear-gradient(to top, #4A00E0, #8E2DE2);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-family: 'Gotham';
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .h1valoracion{
+        font-size: calc(2.750rem + 3vw);
+        font-family: 'Gotham';
+      }
+      .contenedorboton{
+        padding-bottom: 1rem;
+        padding-top:1rem;
+        text-align: center
+      }
+      .boton{
+        letter-spacing: 0.05rem;
+        border-radius: 1rem;
+        background: linear-gradient(to top, #396afc, #2948ff);
+        font-family: 'Gotham';
+      }
+      .filaopiniones{
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+          .columna2opiniones{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+          }
+                                      .quote{
+                                        padding: 1rem;
+                                        color:green;
+                                      }
+                                      .centrarparrafo{
+                                        text-align: center;
+                                        font-style: italic;
+                                        padding-left: 1rem;
+                                        padding-right: 1rem;
+                                      }    
+                                      
+                                                    
+                                                    .img222{
+                                                      clip-path: circle();
+                                                      height: calc(3rem + 5vw);
+                                                    }
+                                                    
+                                            .estrella{
+                                               
+                                                padding: 1rem;
+                                            }
+                                                .fa-star{
+                                                    color:yellow;
+                                                }
+                                            
+    .valoracion1{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        border: 0.01rem solid rgba(255, 255, 255, 0.7);
+        
+    }
+    .valoracion2{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border: 0.01rem solid rgba(255, 255, 255, 0.7);
+      
+  }
+  .valoracion3{
+    display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
-    /*h1*/
-    .contenedorvaloraciones{
-        display:flex;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        flex-flow: row wrap;
-        width: 90%;
-        height: 70%;
-        text-align: center;
-    }
-        .valoracion1{
-            width: 30%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: 1px solid #333;
-        }
-                                            .quote{
-                                                text-align: center;
-                                                height: 10%;
-                                            }
-                                            .parrafo{
-                                                color: white;
-                                                padding: 1rem;
-                                                font-style:italic;
-                                                height: 30%;
-                                                text-overflow: ellipsis;
-                                            }
-                                            .imgvaloraciones{
-                                                clip-path: circle();
-                                                height: 7rem;
-                                            }
-                                            .h3valoraciones{
-                                                color:white;
-                                                padding-top: 1rem;
-                                                padding-bottom: 1rem;
-                                            }
-                                            .estrella{
-                                                color: #494ceb;
-                                            
-                                            }
-        .valoracion2{
-            width: 30%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: 1px solid #333;
-
-        }
-        .valoracion3{
-            width: 30%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: 1px solid #333;
-            
-        }
-        .separacion{
-            width: 5%;
-        }
-    /*boton ahref*/
+    border: 0.01rem solid rgba(255, 255, 255, 0.7);
+  }
+  
         
 
 /*---------------------------------------------CONTACTO----------------------------------------------------------*/
@@ -348,7 +375,7 @@
 
 /*----------------inicio end------------------*/
 /*---------------------------------------------FOOTER + BS----------------------------------------------------------*/
-.container-fluid{
+.colorfooter{
     background:linear-gradient(to bottom, #00093c, #2d0b00);
   }
               .nav-link{
@@ -362,7 +389,7 @@
             text-align: center;
           }
           
-  .row{
+  .filafooter{
     justify-content: space-evenly;
   }
   .btn-group{
@@ -409,6 +436,7 @@
 }
 
 /*---------------------------------------------RESPONSIVE----------------------------------------------------------*/
+    
 @media only screen and (max-width: 450px){
     .video1{
         position:absolute;
@@ -428,10 +456,27 @@
         object-fit: cover;
         z-index:3;
     }
-    .row{
-        display:flex;
-        flex-flow:column wrap;
-      }
-}
+    .filafooter{
+      display:flex;
+      flex-flow:column wrap;
+    }
     
-   
+    .d-flex{
+      flex-flow: column wrap;
+    }
+    .columna2opiniones{
+      display:flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .valoracion1{
+      width: 90%;
+    }
+    .valoracion2{
+      width: 90%
+    }
+    .valoracion3{
+      width: 90%
+    }
+}
