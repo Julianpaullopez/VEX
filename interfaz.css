@@ -4,7 +4,8 @@
     font-family:'Gotham';
     src: url(fonts/gotham-rounded/GothamRounded-Bold.otf);
   }
-
+:root{
+    --fondonegro: #1c1c1d}
 /*---------------------------------------------TODO EL DOCUMENTO-----------------------------------*/
 *{
     font-family: 'Raleway', sans-serif;
@@ -22,15 +23,7 @@
                             "serviciovex2"
                             
 }
-.gridcontacto{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 400px 400px 200px;
-    grid-template-areas:    "iniciocontacto"
-                            "opcionescontacto" 
-                            "formulario" 
-                            "footer";
-}
+
 /*------------------------------------------------BOTONES------------------------------------------*/
     .botones{
         display: flex;
@@ -315,62 +308,35 @@
 
 /*---------------------------------------------CONTACTO----------------------------------------------------------*/
 /*----------------inicio start------------------*/
-.iniciocontacto{
-    grid-area: iniciocontacto;
-    position: relative;
-    min-height: 100vh;  
-}
-    
-    .imagencontacto{
-            position:absolute;
-            top: 0;
-            left: 0px;
-            width: 100%;
-            z-index:3;
-    }
-    .capa2{
-        top: 0;
-        left: 0;
-        width:100%;
-        height:100%;
-        background-color: #333;
-        opacity: 0.2;
-        z-index:5;
-    }
-.opcionescontacto{
-    grid-area: opcionescontacto;
+
+.imagencontacto{
     background-color: red;
-    z-index:3;
+}
+.metodos{
+    display:flex;
+}
+.fila2metodos{
+    background: linear-gradient(to top, #8e2de2, #4a00e0);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    height: 50vh;
+}
+.contacto1{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
 }
-    .contactowhatsapp{
-        background-color: lightgreen;
-        width:25%;
-        height: 100%;
-    }
-    .contactoinstagram{
-        background-color: lightpink;
-        width:25%;
-        height: 100%;
-    }
-    .contactofacebook{
-        background-color: lightblue;
-        width:25%;
-        height: 100%;
-    }
-    .contactoformulario{
-        background-color: lightyellow;
-        width:25%;
-        height: 100%;
-    }
-.form{
-    grid-area: formulario;
-    background-color:lightsalmon;
-    z-index:3;
-    
+.imgmetodos{
+    height: calc(1rem + 5vw);
+}
+
+/*FORMULARIO*/
+.formulario{
+    background-color: var(--fondonegro);
+    display:flex;
+    flex-flow: column wrap;
 }
 
 /*----------------inicio end------------------*/
