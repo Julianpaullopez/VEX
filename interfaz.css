@@ -4,6 +4,14 @@
     font-family:'Gotham';
     src: url(fonts/gotham-rounded/GothamRounded-Bold.otf);
   }
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
 :root{
     --fondonegro: #1c1c1d}
 /*---------------------------------------------TODO EL DOCUMENTO-----------------------------------*/
@@ -19,8 +27,8 @@
     grid-template-columns: 100%;
     grid-template-rows: 100vh 75vh 40vh;
     grid-template-areas:    "inicio"
-                            "serviciovex" 
-                            "serviciovex2"
+                            
+                            
                             
 }
 
@@ -93,125 +101,48 @@
     }
 /*----------------INICIO END------------------*/
 
-/*----------------MEDIO START------------------*/
-.serviciovex{
-    grid-area: serviciovex;
-    background-color:#1c1c1d; /* #1c1c1d */
-    width: 100%;
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-    .titulos{
-        text-align: center;
-        width: 100%;
-        font-weight:bold;
-        font-size: 3rem;
-        background-image: linear-gradient(90deg,#494ceb,#4143c9 50%); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+/*----------------NUESTROS SERVICIOS START------------------*/
+.contenedor__nuestrosservicios{
+  background: #1c1c1d;
     }
-    .contenedorserviciovex{
-        display:flex;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        flex-flow: row wrap;
-        width: 90%;
-        height: 70%;
-        text-align: center;
-    }
-        .servicio1{
-            background-color: #1c1c1d;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            width: 30%;          
-        }
-                                                .imgservicio{
-                                                    clip-path: circle();
-                                                    height:7rem;
-                                                }
-                                                .h3servicio{
-                                                    color:white;
-                                                    padding-top: 1rem;
-                                                    padding-bottom: 1rem;
-                                                }
-                                                .pservicio{
-                                                    color: white;
-                                                    padding: 1rem;
-                                                    font-style:italic;
-                                                    height: 30%;
-                                                    text-overflow: ellipsis;
-                                                }
-        .servicio2{
-            background-color: #1c1c1d;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            width: 30%;
-        }
-        .servicio3{
-            background-color: #1c1c1d;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            width: 30%;
-        }
-    .bot{
-        display: block;
-        text-decoration: none;
-        color: white;
-        border-radius: 1.5rem;
-        text-align: center;
-        font-size: 1.25rem;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-        background-image: linear-gradient(90deg,#494ceb,#4143c9 50%); 
-    }
+    .servicio1{
         
+        border: 0.01rem solid rgba(255, 255, 255, 0.7);
+    }
 
-/*---Comienzo area de servicio vex mensual---*/  
-    .serviciovex2{
-        grid-area: serviciovex2;
-        background-color:#1c1c; /* #1c1c1d */
-        width: 100%;
-        display:flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+    .servicio2{
+      flex-direction: row-reverse;
     }
-    .img{
-        display:flex;
-        flex-flow: column wrap;
-        width: auto;
+    .contenedor__imagen{
+      clip-path: circle();
+      height: calc(3rem + 5vw);
     }
-        .imgservicio2{
-            clip-path: circle();
-            height:10rem;
-        }
-    .contenedorserviciovex2{
-        display:flex;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        flex-flow: column wrap;
-        width: 70%;
-        height: 70%;
-        text-align: center;
-        background-color: red;
-        justify-content: center;
+    .detalleimagen{
+      text-align: center;
+    }
+    .titulonuestrosservicios{
+      text-align: center;
+    }
+                                               
+       
+
+
+
+
+
+
+/*----------------NUESTROS SERVICIOS END------------------*/    
+
+/*----------------VEX MENSUAL START------------------*/   
+    .titulocolor{
+      background: linear-gradient(to left, #d3cce3, #e9e4f0);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
         
         
-/* Valoraciones */
-/*Valoracion*/
+/* Valoraciones START */
+
 .contenedorvaloracion{
 
     /*background: linear-gradient(to bottom, #021B79, #0575E6); */
@@ -221,7 +152,6 @@
       
       .contenedorh1valoracion{
         text-align: center;
-        
         background: linear-gradient(to top, #4A00E0, #8E2DE2);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -288,39 +218,23 @@
         border: 0.01rem solid rgba(255, 255, 255, 0.7);
         
     }
-    .valoracion2{
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-      border: 0.01rem solid rgba(255, 255, 255, 0.7);
-      
-  }
-  .valoracion3{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: 0.01rem solid rgba(255, 255, 255, 0.7);
-  }
+  /* Valoraciones END */ 
   
         
 
 /*---------------------------------------------CONTACTO----------------------------------------------------------*/
-/*----------------inicio start------------------*/
+
 
 .imagencontacto{
     background-color: red;
+    
 }
 .metodos{
     display:flex;
 }
 .fila2metodos{
     background: linear-gradient(to top, #8e2de2, #4a00e0);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    height: 50vh;
+    
 }
 .contacto1{
     display:flex;
@@ -335,11 +249,15 @@
 /*FORMULARIO*/
 .formulario{
     background-color: var(--fondonegro);
-    display:flex;
-    flex-flow: column wrap;
+    
+}
+.formulario__googlemap{
+  width: 400px;
+  height: 300px;
 }
 
-/*----------------inicio end------------------*/
+
+
 /*---------------------------------------------FOOTER + BS----------------------------------------------------------*/
 .colorfooter{
     background:linear-gradient(to bottom, #00093c, #2d0b00);
@@ -372,7 +290,6 @@
 }
 
 
-  
 
 
   
@@ -404,6 +321,7 @@
 /*---------------------------------------------RESPONSIVE----------------------------------------------------------*/
     
 @media only screen and (max-width: 450px){
+  /* Inicio */
     .video1{
         position:absolute;
         top: 0;
@@ -422,6 +340,7 @@
         object-fit: cover;
         z-index:3;
     }
+    /* Footer */
     .filafooter{
       display:flex;
       flex-flow:column wrap;
@@ -430,6 +349,8 @@
     .d-flex{
       flex-flow: column wrap;
     }
+
+    /* Index.html - Valoraciones */
     .columna2opiniones{
       display:flex;
       flex-flow: column wrap;
@@ -439,10 +360,26 @@
     .valoracion1{
       width: 90%;
     }
-    .valoracion2{
-      width: 90%
+    
+    /* Contacto.html */
+    .fila2metodos{
+      flex-flow: column;
     }
-    .valoracion3{
-      width: 90%
+    .contacto1{
+      width:100% !important;
     }
+    /* formulario */
+    .formulario__googlemap{
+      width: 200px;
+      height: 150px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1100px){
+  .formulario{
+    flex-flow: column wrap;
+  }
+  
 }
