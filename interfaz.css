@@ -1,3 +1,4 @@
+/*-- All --*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: 'Gotham';
@@ -13,7 +14,6 @@
 :root {
   --fondonegro: #1c1c1d; }
 
-/*---------------------------------------------TODO EL DOCUMENTO-----------------------------------*/
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -21,6 +21,7 @@
   box-sizing: border-box;
   color: white; }
 
+/*-- All --*/
 /*-- Nav --*/
 .botones {
   display: flex;
@@ -52,7 +53,7 @@ nav a:hover {
   padding-bottom: .5rem; }
 
 /*-- Nav --*/
-/*-- Video --*/
+/*-- Index - Video --*/
 .inicio {
   height: 100vh;
   position: relative;
@@ -87,8 +88,8 @@ nav a:hover {
   bottom: 45%;
   left: 5%; }
 
-/*-- Video --*/
-/*-- Nuestros servicios --*/
+/*-- Index - Video --*/
+/*-- Index - Nuestros servicios --*/
 .contenedor__nuestrosservicios {
   background: #1c1c1d; }
 
@@ -105,32 +106,33 @@ nav a:hover {
 .titulonuestrosservicios {
   text-align: center; }
 
-/*-- Nuestros servicios --*/
-/*----------------VEX MENSUAL START------------------*/
+/*-- Index - Nuestros servicios --*/
+/*-- Index - VEX mensual --*/
 .titulocolor {
   background: linear-gradient(to left, #d3cce3, #e9e4f0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; }
 
-/* Valoraciones START */
+/*-- Index - VEX mensual --*/
+/*-- Index - Valoraciones --*/
 .contenedorvaloracion {
-  /*background: linear-gradient(to bottom, #021B79, #0575E6); */
   background: #1c1c1d; }
 
 .contenedorh1valoracion {
   text-align: center;
   background: linear-gradient(to top, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-family: 'Gotham';
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 
-.h1valoracion {
+.h1valoracion, .h1valoracion--ns {
   font-size: calc(2.750rem + 3vw);
   font-family: 'Gotham'; }
+
+.h1valoracion--ns {
+  border: 25px solid green; }
 
 .contenedorboton {
   padding-bottom: 1rem;
@@ -181,35 +183,8 @@ nav a:hover {
   align-items: center;
   border: 0.01rem solid rgba(255, 255, 255, 0.7); }
 
-/* Valoraciones END */
-/*---------------------------------------------CONTACTO----------------------------------------------------------*/
-.imagencontacto {
-  background-color: red; }
-
-.metodos {
-  display: flex; }
-
-.fila2metodos {
-  background: linear-gradient(to top, #8e2de2, #4a00e0); }
-
-.contacto1 {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center; }
-
-.imgmetodos {
-  height: calc(1rem + 5vw); }
-
-/*FORMULARIO*/
-.formulario {
-  background-color: var(--fondonegro); }
-
-.formulario__googlemap {
-  width: 400px;
-  height: 300px; }
-
-/*---------------------------------------------FOOTER + BS----------------------------------------------------------*/
+/*-- Index - Valoraciones --*/
+/*-- Footer --*/
 .colorfooter {
   background: linear-gradient(to bottom, #00093c, #2d0b00); }
 
@@ -237,6 +212,62 @@ nav a:hover {
 .redsocialcolumna3 {
   border: 0; }
 
+/*-- Footer --*/
+/*-- Contacto --*/
+.imagencontacto {
+  background-color: red; }
+
+.metodos {
+  display: flex; }
+
+.fila2metodos {
+  background: linear-gradient(to top, #8e2de2, #4a00e0); }
+
+.contacto1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+.imgmetodos {
+  height: calc(1rem + 5vw); }
+
+/*-- Contacto - Formulario --*/
+.formulario {
+  background-color: var(--fondonegro); }
+
+.formulario__googlemap {
+  width: 400px;
+  height: 300px; }
+
+/*-- Contacto --*/
+/*-- Valoraciones --*/
+.detar {
+  background-color: black; }
+
+.iniciovaloraciones {
+  position: relative;
+  padding: 0; }
+
+.rectangulo1 {
+  background-color: green;
+  width: 300px;
+  height: 200px;
+  margin: 5px; }
+
+.rectangulo2 {
+  background-color: red;
+  width: 300px;
+  height: 400px;
+  margin: 10px; }
+
+.rectangulo3 {
+  background-color: pink;
+  width: 300px;
+  height: 600px;
+  margin: 15px; }
+
+/*-- Valoraciones --*/
 /*---------------------------------------------WHATSAPP----------------------------------------------------------*/
 .float {
   position: fixed;
