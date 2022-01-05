@@ -134,10 +134,7 @@ nav a:hover {
   font-size: calc(2.750rem + 3vw);
   font-family: 'Gotham'; }
 
-.h1valoracion--ns{
-  @extend .h1valoracion;
-  border: 25px solid green;
-}
+
 
 .contenedorboton {
   padding-bottom: 1rem;
@@ -222,13 +219,14 @@ nav a:hover {
 
 /*-- Contacto --*/
 .imagencontacto {
-  background-color: red; }
+  background-color: red;
+padding: 0px !important; }
 
 .metodos {
   display: flex; }
 
 .fila2metodos {
-  background: linear-gradient(to top, #8e2de2, #4a00e0); }
+  background-color: #1c1c1d; }
 
 .contacto1 {
   display: flex;
@@ -250,27 +248,27 @@ nav a:hover {
 
 
 /*-- Valoraciones --*/
-.detar{
-  background-color: black;
+.fondoheroevaloracion{
+  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  opacity: 0.8;
 }
 .iniciovaloraciones {
   position: relative;
   padding: 0; }
-@mixin rectangulo ($colorfondo, $ancho, $altura, $margen){
-  background-color: $colorfondo;
-  width: $ancho;
-  height: $altura;
-  margin: $margen;
+  .imgvaloracion {
+    clip-path: circle();
+    height: calc(3rem + 5vw); }
+.centrarparrafo2{
+  @extend .centrarparrafo;
+  color:black;
 }
-.rectangulo1{
-  @include rectangulo(green, 300px, 200px, 5px);
+.fondovaloracion{
+  background-color: #1c1c1d;
+  justify-content: space-around;
 }
-.rectangulo2{
-  @include rectangulo(red, 300px, 400px, 10px);
-}
-.rectangulo3{
-  @include rectangulo(pink, 300px, 600px, 15px);
-}
+.tituloheroevaloracion{
+  font-size: calc(1.5rem + 3vw);
+  font-family: 'Gotham'; }
 
 /*-- Valoraciones --*/
 

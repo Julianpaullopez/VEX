@@ -127,12 +127,9 @@ nav a:hover {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 
-.h1valoracion, .h1valoracion--ns {
+.h1valoracion {
   font-size: calc(2.750rem + 3vw);
   font-family: 'Gotham'; }
-
-.h1valoracion--ns {
-  border: 25px solid green; }
 
 .contenedorboton {
   padding-bottom: 1rem;
@@ -160,7 +157,7 @@ nav a:hover {
   padding: 1rem;
   color: green; }
 
-.centrarparrafo {
+.centrarparrafo, .centrarparrafo2 {
   text-align: center;
   font-style: italic;
   padding-left: 1rem;
@@ -215,13 +212,14 @@ nav a:hover {
 /*-- Footer --*/
 /*-- Contacto --*/
 .imagencontacto {
-  background-color: red; }
+  background-color: red;
+  padding: 0px !important; }
 
 .metodos {
   display: flex; }
 
 .fila2metodos {
-  background: linear-gradient(to top, #8e2de2, #4a00e0); }
+  background-color: #1c1c1d; }
 
 .contacto1 {
   display: flex;
@@ -242,30 +240,28 @@ nav a:hover {
 
 /*-- Contacto --*/
 /*-- Valoraciones --*/
-.detar {
-  background-color: black; }
+.fondoheroevaloracion {
+  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  opacity: 0.8; }
 
 .iniciovaloraciones {
   position: relative;
   padding: 0; }
 
-.rectangulo1 {
-  background-color: green;
-  width: 300px;
-  height: 200px;
-  margin: 5px; }
+.imgvaloracion {
+  clip-path: circle();
+  height: calc(3rem + 5vw); }
 
-.rectangulo2 {
-  background-color: red;
-  width: 300px;
-  height: 400px;
-  margin: 10px; }
+.centrarparrafo2 {
+  color: black; }
 
-.rectangulo3 {
-  background-color: pink;
-  width: 300px;
-  height: 600px;
-  margin: 15px; }
+.fondovaloracion {
+  background-color: #1c1c1d;
+  justify-content: space-around; }
+
+.tituloheroevaloracion {
+  font-size: calc(1.5rem + 3vw);
+  font-family: 'Gotham'; }
 
 /*-- Valoraciones --*/
 /*---------------------------------------------WHATSAPP----------------------------------------------------------*/
