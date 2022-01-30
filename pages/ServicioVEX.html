@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../interfaz.css"/>
 </head>
 <body>
-    <div class="container-fluid m-0">
+    <div class="container-fluid">
         <div class="row iniciovaloraciones">
             <nav class="botones">
               <a href="../index.html">Inicio</a>
@@ -30,14 +30,87 @@
                 <div class="col-lg-8 col-md-8 mx-auto my-auto">
                     <h1 class="tituloheroevaloracion">SERVICIO VEX</h1>
                     <p class="text leadeater">Asegura de tener contratado el mejor servicio de mantenimiento, pero ahora, al mejor precio. Consulta por planes para empresas.</p>
-                    <p>
-                        <a href="#pricing" class="btn btn-primary my-2">Conocer los planes</a>
-                    </p>
+                    <button type="button"><span class="spansito2"></span><a href="#pricing">PLANES</a></button>
+                    <button type="button"><span class="spansito2"></span><a href="#FAQ">CONOCER MÁS</a></button>
                 </div>
             </div>
         </div>
 
+        <div class="row" id="FAQ">
+          <div class="contenedor pb-5">
+            <h1 class="h1valoracion pt-5 pe-5 px-5">Preguntas Frecuentes</h1>
+            <div class="row-2 border244 mb-5 p-0"></div>
+            <div class="accordion">
+  
+  
+              <!-- Comienzo Lista FAQ -->
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">¿Qué es el servicio VEX?</div>
+                <div class="contentsito">
+                  <h6>El servicio VEX es un servicio que se abona de forma mensual. Lo que te asegura este servicio es poder contar con asesoramiento técnico de forma permanente para consultas de forma gratuita y además te proporciona descuentos en los trabajos que realizamos actualmente.</h6>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">Dentro del servicio, ¿Qué es gratuito?</div>
+                <div class="contentsito">
+                  <p>Dentro del servicio, lo que se proporciona de forma gratuita es asesoramiento técnico como por ejemplo ayuda para armar un gabinete, ayuda para comprar una notebook, entre otros problemas generales que pueden ser solucionados a distancia. Podes consultar la lista entera <a href="#">aquí</a></p>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">Dentro del servicio, ¿Qué posee descuentos?</div>
+                <div class="contentsito">
+                  <p>Dentro del servicio, los descuentos son aplicados a todos los trabajos que realizamos: formateo de computadoras, limpieza de computadoras, reparación de consolas, entre otros. Recorda que podes consultar todos nuestros servicios <a href="#">aquí</a></p>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">¿Cuántos planes hay disponibles?</div>
+                <div class="contentsito">
+                  <p">El servicio de VEX cuenta actualmente con 3 planes diseñados para adecuarse a las necesidades del cliente. Estos planes son únicamente para usuarios particulares, en el caso de querer contratar el servicio por parte de una empresa, pongase en contacto con nosotros para asesorarlo.</p>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">¿Cómo utilizo el sevicio?</div>
+                <div class="contentsito">
+                  <p>Una vez contratado el servicio, en el momento que tenga alguna dificultad relacionada con computadoras, consolas de videojuegos o problemas en general con algún artefacto tecnológico, te comunicas con nuestro WhatsApp y coordinaremos una visita en el caso que sea necesario para solucionar tu inconveniente.</p>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">¿Los descuentos de las promociones se acumulan con los del servicio?</div>
+                <div class="contentsito">
+                  <p>No, los descuentos no son acumulables, pero serás beneficiario de aquel que más te beneficie. Por ejemplo, si tu plan tiene un descuento del 20% y tenemos una promoción del 30%, se te aplicará el descuento del 30%.</p>
+                </div>
+              </div>
+  
+              <div class="contentbox mt-1 mb-1 me-1 position-relative">
+                <div class="label p-2 position-relative h3 mb-3">Los feriados y fin de semanas, ¿El servicio esta disponible?</div>
+                <div class="contentsito">
+                  <p>Si, tanto los feriados como los fin de semanas al tener contratado el servicio, si tuvieras un problema, podrías contactarnos para solucionarlo lo antes posible.</p>
+                </div>
+              </div>
+              <!-- Fin de Lista FAQ -->
+  
+  
+  
+  
+  
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+
         <div class="row pricing py-5 px-5" id="pricing">
+            <div class="row contenedor2">
+              <h1 class="h1valoracion pt-5 pe-5 px-5 text-center">Nuestros planes</h1>
+            <div class="row-2 border244 mb-5 p-0"></div>
+            </div>
             <!-- Plan básico -->
             <div class="col-lg-4">
                   <div class="card mb-5 mb-lg-0">
@@ -162,5 +235,18 @@
     <i class="fa fa-whatsapp my-float"></i>
     </a>
     <!-- Botón de WhatsApp --> 
+
+    <!-- FAQ JS -->
+    <!-- <script src="../faqtool.js"></script> -->
+    <script>
+      const accordion = document.getElementsByClassName
+      ('contentbox');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 </html>

@@ -14,95 +14,58 @@
     <link rel="stylesheet" href="interfaz.css"/>
 </head>
 <body>
-	<!------------HEADER----------------------->
-    
-    <section class="container-fluid inicio">
-        <video muted autoplay loop class="video1"> 
-            <source src="assets/inicio.mp4" type="video/mp4">
-        </video>
-        <video muted autoplay loop class="video2"> 
-            <source src="assets/inicioresponsive.mp4" type="video/mp4">
-        </video>
-        
-            <nav class="botones">
-                <a href="index.html">Inicio</a>
-                <a href="pages/VEX.html">VEX</a>
-                <a href="pages/ServicioVEX.html">Servicio VEX</a>
-                <a href="pages/Valoraciones.html">Valoraciones</a>
-                <a href="pages/Contacto.html">Contacto</a>
-            </nav>
-        <div class="capa"></div>
-        <div class="code">
-            <h1>¡Hola!, somos VEX y estamos para ayudarte con: <span class="escribiendo"></span> </h1>
+        <div class="banner">
+        <nav class="botones">
+            <a href="index.html">Inicio</a>
+            <a href="pages/VEX.html">VEX</a>
+            <a href="pages/ServicioVEX.html">Servicio VEX</a>
+            <a href="pages/Valoraciones.html">Valoraciones</a>
+            <a href="pages/Contacto.html">Contacto</a>
+          </nav>
+          <div class="content text-center">
+              <h1 class="display-1 mt-5"> <strong> ¡Bienvenidos a VEX!</strong></h1>
+              <p class="mx-5 px-5 my-auto h5 parrafoprincipal">En este sitio encontrarán toda la información relacionada con nuestros servicios, el equipo de profesionales con el que contamos y todo acerca de nuestro nuevo servicio mensual</p>
+              <div>
+                  <button type="button"><span class="spansito"></span><a href="#ourservices">SERVICIOS</a></button>
+                  <button type="button"><span class="spansito"></span><a href="pages/VEX.html">CONOCER MÁS</a></button>
+              </div>
+          </div>
         </div>
-            
-        
-    </section>
-<!------------------------------MEDIO-------------------------------------------------------------------------->
-    
-
-
-<div class="container-fluid contenedor__nuestrosservicios">
-    <div class="row">
-        <div class="row contenedorh1valoracion" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="500">
-            <h1 class="h1valoracion">NUESTROS SERVICIOS</h1>
+        <div data-aos="fade-down" data-aos-duration="1000">
+            <div class="bg-dark contenedor2">
+                <h1 class="h1valoracion pt-5 pe-5 px-5 text-center" id="ourservices">Nuestros servicios</h1>
+                <div class="row-2 border244 mb-5 p-0"></div>
+            </div>
         </div>
-                    <div class="row servicio1" data-aos="fade-right">
-                        <div class="col-3 mt-5 mb-5 detalleimagen">
-                            <img src="assets/nuestrosservicios/s2.png" alt="sae" class="contenedor__imagen">
-                        </div>
-                        <div class="col-6"><h3 class="titulonuestrosservicios">Computadoras</h3>
-                            <ul class="text-center">
-                                <li>Formateo de sistema operativo</li>
-                                <li>Limpieza de virus y malware</li>
-                                <li>Asesoramiento profesional para el armado de computadoras</li>
-                                <li>Instalación de programas</li>
-                                <li>Entre otros</li>
-                            </ul>  
-                        </div>                          
-                    </div>
+        <div data-aos="fade-up" data-aos-duration="1000">
 
-                    <div class="row servicio2" data-aos="fade-left">
-                        <div class="col-3 mt-5 mb-5 detalleimagen">
-                            <img src="assets/nuestrosservicios/s1.png" alt="sol" class="contenedor__imagen">
-                        </div>
-                        <div class="col-6 ">
-                            <h3 class="titulonuestrosservicios">Consolas de videojuegos</h3>
-                            <ul>
-                                <li>Limpieza interna de consolas</li>
-                                <li>Reparación y mantenimiento de consola;</li>
-                                <li>Instalación de juegos</li>
-                                <li>Arreglos y problemas con los mandos (joysticks)</li>
-                                <li>Entre otros</li>
-                            </ul> 
-                        </div>
+            <div class="row bg-dark gx-0 m-0 justify-content-around">
+                <div class="col-4 image">
+                    <img class="image__img" src="assets/our_services/Computers.jpg" alt="Computadoras">
+                    <div class="image__overlay">
+                        <div class="image__title text-center">Computadoras</div>
+                        <p class="image__description mt-1 mb-0 text-center">Te ayudamos con tus gabinetes y notebooks</p>
                     </div>
-
-                    <div class="row servicio1" data-aos="fade-right">
-                        <div class="col-3 mt-5 mb-5 detalleimagen">
-                            <img src="assets/nuestrosservicios/s3.png" alt="ale" class="contenedor__imagen">
-                        </div>
-                        <div class="col-6">
-                            <h3 class="titulonuestrosservicios">Soluciones generales</h3>
-                            <ul>
-                                <li>Instalación y configuración de router</li>
-                                <li>Instalación y configuración de repetidores</li>
-                                <li>Asesoramiento profesional para compras</li>
-                                <li>Asesoramiento con problemas de internet</li>
-                                <li>Entre otros</li>
-                            </ul> 
-                        </div>
+                </div>
+                <div class="col-4 image">
+                    <img class="image__img" src="assets/our_services/ps4.jpg" alt="Consolas de videojuegos">
+                    <div class="image__overlay">
+                        <div class="image__title text-center">Consolas de videojuegos</div>
+                        <p class="image__description mt-1 mb-0 text-center">Te ayudamos con tus consolas de videojuegos</p>
                     </div>
-        
-        <div class="col contenedorboton">
-            <button class="btn btn-primary boton" type="button">Conoce más</button>
+                </div>
+                <div class="col-4 image">
+                    <img class="image__img" src="assets/our_services/serviciotecnico.jpg" alt="Computadoras">
+                    <div class="image__overlay">
+                        <div class="image__title text-center">Soluciones generales</div>
+                        <p class="image__description mt-1 mb-0 text-center">Te ayudamos con problemas generales</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+      
 
-<!-- Servicio mensual -->
+    <!-- Servicio mensual -->
     <div class="b-example-divider"></div>
 
     <div class="bg-dark text-secondary px-4 py-5 text-center">
@@ -111,115 +74,48 @@
             <div class="col-lg-6 mx-auto">
                 <p class="fs-5 mb-4">Asegurate de estar cubierto con nuestro servicio mensual y brindale a tus dispositivos el mejor mantenimiento para que puedan funcionar siempre a la perfección.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Quiero saber más</button>
+                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"><a href="pages/ServicioVEX.html">Quiero saber más</a></button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="b-example-divider mb-0"></div>
-<!-- Servicio mensual -->
-
-<!-- Valoraciones -->         
-    <div class="container-fluid contenedorvaloracion">
-        <div class="row filaopiniones">
-            <div class="col contenedorh1valoracion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-            <h1 class="h1valoracion">SUS OPINIONES</h1>
-            </div>
-        <div class="col columna2opiniones">
-
-                        <div class="col-3 valoracion1" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/Valoraciones/quoteblanco.png" alt="quote" class="quote">
-                            <p class="parrafo centrarparrafo">Buena atención, te explican todo lo que van a hacer ademas destaco la rapidez para entregar nuevamente la maquina ya perfecta.
-                                Muy recomendable!</p>
-                            <img src="assets/Valoraciones/sae.jpg" alt="sae" class="img222">
-                            <h3 class="h3valoraciones">Sae Leiva</h3>
-                            <div class="estrella">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-3 valoracion1" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/Valoraciones/quoteblanco.png" alt="quote" class="quote">
-                            <p class="parrafo centrarparrafo">Excelente trabajo y atención. Quedé más que conforme con el laburo que hacen y mi máquina quedó como nueva! Muy muy buenos precios. Recomendable 100%</p>
-                            <img src="assets/Valoraciones/sol.jpg" alt="sol" class="img222">
-                            <h3 class="h3valoraciones">Sol Leoz</h3>
-                            <div class="estrella">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-3 valoracion1" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/Valoraciones/quoteblanco.png" alt="quote" class="quote">
-                        <p class="parrafo centrarparrafo">Excelente atención y trabajo! 
-                            Te explican el proceso de arreglo de manera sencilla y súper rápidos al momento de entregar la máquina 👌🏼💯</p>
-                        <img src="assets/Valoraciones/ale.jpg" alt="ale" class="img222">
-                        <h3 class="h3valoraciones">Ale Fernandez</h3>
-                        <div class="estrella">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>    
-                        </div>
-        </div>
-        <div class="col contenedorboton">
-            <button class="btn btn-primary boton" type="button">Conoce más</button>
-        </div>
-        </div>
-
-
-        <div class="row py-5 filafooter colorfooter">
-            <div class="col-lg-3 col-12">
-                          <h5>Secciones</h5>
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-white">Inicio</a></li>
-                            <li class="nav-item mb-2"><a href="VEX.html" class="nav-link p-0 text-white">VEX</a></li>
-                            <li class="nav-item mb-2"><a href="ServicioVEX.html" class="nav-link p-0 text-white">Servicio VEX</a></li>
-                            <li class="nav-item mb-2"><a href="Valoraciones.html" class="nav-link p-0 text-white">Valoraciones</a></li>
-                            <li class="nav-item mb-2"><a href="Contacto.html" class="nav-link p-0 text-white">Contacto</a></li>
-                          </ul>
-            </div>
-            <div class="col-lg-3 m-lg-0 col-12 mt-5 mb-5">
-                          <h5 class="titulocentrado">Redes sociales</h5>
-                          <div class="d-grid gap-2 col-6 mx-auto">
-                                <a href="https://www.facebook.com/vexsoltec" target="_blank" class="btn btn-primary">Facebook</a>
-                                <a href="https://www.instagram.com/vexsoltec" target="_blank" class="btn btn-primary">Instagram</a>
-                                <a href="https://www.linkedin.com/in/julianlopezagustin/" target="_blank" class="btn btn-primary">LinkedIn</a>
-                          </div>
-            </div>
-            <div class="col-lg-4 m-lg-0 col-12 mt-5 mb-5">
-                          <form>
-                            <h5>Suscríbite a nuestro boletín</h5>
-                            <p>Enterate de nuestras últimas promociones siempre</p>
-                            <div class="d-flex w-100 gap-2">
-                              <label for="newsletter1" class="visually-hidden">E-Mail</label>
-                              <input id="newsletter1" type="text" class="form-control" placeholder="E-Mail">
-                              <button class="btn btn-primary" type="button">Suscribirse</button>
-                            </div>
-                          </form>
-            </div>
-        </div>
-
-
-
-
-    </div>
-<!-- Valoraciones --> 
-
+    <!-- Servicio mensual -->
 
 	
-
-          
+    <div class="row py-5 filafooter colorfooter gx-0">
+        <div class="col-lg-3 col-12">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-white">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="VEX.html" class="nav-link p-0 text-white">VEX</a></li>
+                        <li class="nav-item mb-2"><a href="ServicioVEX.html" class="nav-link p-0 text-white">Servicio VEX</a></li>
+                        <li class="nav-item mb-2"><a href="Valoraciones.html" class="nav-link p-0 text-white">Valoraciones</a></li>
+                        <li class="nav-item mb-2"><a href="Contacto.html" class="nav-link p-0 text-white">Contacto</a></li>
+                    </ul>
+        </div>
+        <div class="col-lg-3 m-lg-0 col-12 mt-5 mb-5">
+                    <h5 class="titulocentrado">Redes sociales</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                            <a href="https://www.facebook.com/vexsoltec" target="_blank" class="btn btn-primary">Facebook</a>
+                            <a href="https://www.instagram.com/vexsoltec" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="https://www.linkedin.com/in/julianlopezagustin/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                    </div>
+        </div>
+        <div class="col-lg-4 m-lg-0 col-12 mt-5 mb-5">
+                    <form>
+                        <h5>Suscríbite a nuestro boletín</h5>
+                        <p>Enterate de nuestras últimas promociones siempre</p>
+                        <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">E-Mail</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="E-Mail">
+                        <button class="btn btn-primary" type="button">Suscribirse</button>
+                        </div>
+                    </form>
+        </div>
+    </div> 
+            
     
 
 
@@ -232,16 +128,7 @@
             AOS.init();
         </script>  
     <!-- Animaciones AOS -->
-    <!-- Escritura del inicio JS -->
-    <script src=assets/typed.min.js></script>
-    <script>
-        var typed = new Typed('.escribiendo', {
-        strings: ['computadoras.', 'consolas de videojuegos.','redes e internet', 'y mucho más...'],
-        typeSpeed: 90,
-        backspeed: 100,
-        loop:true,
-        });
-    </script>
+    <!-- Scroll JS -->
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
         var nav = document.querySelector("nav");

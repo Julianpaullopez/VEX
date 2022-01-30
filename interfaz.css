@@ -21,8 +21,120 @@
   box-sizing: border-box;
   color: white; }
 
+body, html {
+  margin: 0;
+  padding: 0; }
+
 /*-- All --*/
-/*asdasdas*/
+/*-- index.html - fondo del inicio start --*/
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/fondoindex.png);
+  background-size: cover;
+  background-position: center; }
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  color: #fff; }
+
+.parrafoprincipal {
+  line-height: 25px; }
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  overflow: hidden; }
+
+.spansito {
+  background: #494ceb;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s; }
+
+.spansito2 {
+  background: #131212;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s; }
+
+button:hover span {
+  width: 100%; }
+
+button:hover {
+  border: none; }
+
+/*-- index.html - fondo del inicio end --*/
+/*-- index.html - our services start --*/
+.image {
+  position: relative;
+  width: 500px;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.image__img {
+  display: block;
+  width: 100%; }
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s; }
+
+.image__overlay > * {
+  transform: translatey(1rem);
+  transition: transform 0.25s; }
+
+.image__title {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.image__description {
+  font-size: 1.25rem; }
+
+.image__overlay:hover {
+  opacity: 1; }
+
+.image__overlay:hover > * {
+  transform: translatey(0); }
+
+/*-- index.html - our services start --*/
+/*VEX.html - Our team*/
 .heading {
   font-size: 4rem;
   color: white; }
@@ -85,22 +197,11 @@
   .profile p {
     margin: 20px 10px 80px 10px; } }
 
-/*asdasdasd* - NUESTR EQUIPO*/
-.imgnuestrahistoria {
-  clip-path: circle();
-  height: calc(6rem + 10vw); }
+/*VEX.html - Our team*/
+/*VEX.html - Timeline*/
+.justificar {
+  text-align: justify; }
 
-.textofondo23 {
-  background-color: #494ceb; }
-
-.lineaconexion {
-  background-color: #494ceb;
-  padding: 0;
-  margin: 0;
-  z-index: 5; }
-
-/*asdasdasd* - NUESTR EQUIPO*/
-/*asdasdasd* - NUESTR LINEA DE TIEMpo*/
 /* Timeline holder */
 ul.timeline {
   list-style-type: none;
@@ -148,7 +249,57 @@ li.timeline-item::before {
 .fondohistoria {
   background: linear-gradient(to top, #0575e6, #021b79); }
 
-/*asdasdasd* - NUESTR LINEA DE TIEMpo*/
+/*VEX.html - Timeline*/
+/*ServicioVEX.html - FAQ*/
+.contenedor {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #1c1c1d; }
+
+.contenedor2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.border244 {
+  background-color: #2948ff;
+  width: 20rem;
+  height: .4rem; }
+
+.accordion {
+  width: 80%; }
+
+.accordion .contentbox .label {
+  color: #fff;
+  cursor: pointer; }
+
+.accordion .contentbox .label::before {
+  content: '+';
+  position: absolute;
+  top: -5%;
+  right: 1.5rem;
+  transform: transateY(-50%);
+  font-size: 2rem; }
+
+.accordion .contentbox.active .label::before {
+  content: '-'; }
+
+.accordion .contentbox .contentsito {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+  overflow-y: auto; }
+
+.accordion .contentbox.active .contentsito {
+  height: fit-content;
+  padding: 0.5rem; }
+
+/*ServicioVEX.html - FAQ*/
 /*-- Nav --*/
 .botones {
   display: flex;
@@ -158,8 +309,8 @@ li.timeline-item::before {
   align-content: center;
   position: fixed;
   z-index: 10;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   width: 100vw;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   transition: 0.7s; }
 
 nav.botones.bajando {
@@ -184,7 +335,8 @@ nav a:hover {
 .inicio {
   height: 100vh;
   position: relative;
-  padding: 0; }
+  width: 100vw;
+  overflow: hidden; }
 
 .video1 {
   position: absolute;
@@ -209,9 +361,6 @@ nav a:hover {
 
 /*-- Index - Video --*/
 /*-- Index - Nuestros servicios --*/
-.contenedor__nuestrosservicios {
-  background: #1c1c1d; }
-
 .servicio2 {
   flex-direction: row-reverse; }
 
@@ -236,15 +385,6 @@ nav a:hover {
 /*-- Index - Valoraciones --*/
 .contenedorvaloracion {
   background: #1c1c1d; }
-
-.contenedorh1valoracion {
-  text-align: center;
-  background: linear-gradient(to top, #4A00E0, #8E2DE2);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-family: 'Gotham';
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
 
 .h1valoracion {
   font-size: calc(2.750rem + 3vw);
